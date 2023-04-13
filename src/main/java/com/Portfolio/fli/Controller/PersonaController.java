@@ -13,7 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
+/*import org.springframework.web.bind.annotation.PostMapping;*/
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,12 +22,12 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin(origins = {"https://forntendprueba.web.app"})
 public class PersonaController {
     @Autowired ImpPersonaService impPersonaService;
-    @Autowired IPersonaService ipersonaService;
+    /*@Autowired IPersonaService ipersonaService;
     
        /* @GetMapping("/personas/traer")
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
-    }*/
+    }
     
     @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
@@ -38,7 +38,7 @@ public class PersonaController {
         @GetMapping("/personas/traer/perfil")
     public Persona findPersona(){
         return ipersonaService.findPersona((long)1);
-    }
+    }*/
     
  @GetMapping("/lista")
     public ResponseEntity<List<Persona>> list(){
