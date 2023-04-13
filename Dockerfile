@@ -3,10 +3,8 @@
 #COPY target/fli-0.0.1-SNAPSHOT.jar  fli-app.jar
 #ENTRYPOINT ["java","-jar","/fli-app.jar"]
 
-FROM openjdk:17
+FROM openjdk:11-jre-slim
 MAINTAINER FLI
-COPY target/fli-0.0.1-SNAPSHOT.jar  fli-app.jar
-WORKDIR /usr/src/myapp
-#RUN javac Main.java
-CMD ["java", "Main"]
+COPY --from=build /home/app/target/fli-0.0.1-SNAPSHOT.jar /usr/local/lib/fli-app.jar
+EXPOSE 8080
 ENTRYPOINT ["java","-jar","/fli-app.jar"]
