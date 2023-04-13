@@ -2,6 +2,7 @@ package com.Portfolio.fli.Controller;
 
 import com.Portfolio.fli.Dto.dtoPersona;
 import com.Portfolio.fli.Entity.Persona;
+import com.Portfolio.fli.Interface.IPersonaService;
 import com.Portfolio.fli.Security.Controller.Mensaje;
 import com.Portfolio.fli.Service.ImpPersonaService;
 import io.micrometer.common.util.StringUtils;
@@ -17,24 +18,29 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = {"https://forntendprueba.web.app", "http://localhost:4200"})
+@CrossOrigin(origins = {"https://forntendprueba.web.app"})
 public class PersonaController {
-    @Autowired ImpPersonaService ipersonaService;
+    @Autowired ImpPersonaService impPersonaService;
+    @Autowired IPersonaService ipersonaService;
     
+        @GetMapping("/personas/traer")
+    public List<Persona> getPersona(){
+        return ipersonaService.getPersona();
+    }
     
  @GetMapping("/lista")
     public ResponseEntity<List<Persona>> list(){
-        List<Persona> list = ipersonaService.list();
+        List<Persona> list = impPersonaService.list();
         return new ResponseEntity(list, HttpStatus.OK);
     }
     
     @GetMapping("/detail/{id}")
     public ResponseEntity<Persona> getById(@PathVariable("id")int id){
-        if(!ipersonaService.existsById(id)){
+        if(!impPersonaService.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.BAD_REQUEST);
         }
         
-        Persona persona = ipersonaService.getOne(id).get();
+        Persona persona = impPersonaService.getOne(id).get();
         return new ResponseEntity(persona, HttpStatus.OK);
     }
     
@@ -66,24 +72,24 @@ public class PersonaController {
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
-        if(!ipersonaService.existsById(id)){
+        if(!impPersonaService.existsById(id)){
             return new ResponseEntity(new Mensaje("No existe el ID"), HttpStatus.NOT_FOUND);
         }
-        if(ipersonaService.existsByNombre(dtopersona.getNombre()) && ipersonaService.getByNombre(dtopersona.getNombre()).get().getId() != id){
+        if(impPersonaService.existsByNombre(dtopersona.getNombre()) && impPersonaService.getByNombre(dtopersona.getNombre()).get().getId() != id){
             return new ResponseEntity(new Mensaje("Ese nombre ya existe"), HttpStatus.BAD_REQUEST);
         }
         if(StringUtils.isBlank(dtopersona.getNombre())){
             return new ResponseEntity(new Mensaje("El campo no puede estar vacio"), HttpStatus.BAD_REQUEST);
         }
         
-        Persona persona = ipersonaService.getOne(id).get();
+        Persona persona = impPersonaService.getOne(id).get();
         
         persona.setNombre(dtopersona.getNombre());
         persona.setApellido(dtopersona.getApellido());
         persona.setDescripcion(dtopersona.getDescripcion());
         persona.setImg(dtopersona.getImg());
         
-        ipersonaService.save(persona);
+        impPersonaService.save(persona);
         
         return new ResponseEntity(new Mensaje("Persona actualizada"), HttpStatus.OK);
     }
