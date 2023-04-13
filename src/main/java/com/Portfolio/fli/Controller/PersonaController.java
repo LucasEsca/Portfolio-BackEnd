@@ -24,10 +24,10 @@ public class PersonaController {
     @Autowired ImpPersonaService impPersonaService;
     @Autowired IPersonaService ipersonaService;
     
-        @GetMapping("/personas/traer")
+       /* @GetMapping("/personas/traer")
     public List<Persona> getPersona(){
         return ipersonaService.getPersona();
-    }
+    }*/
     
     @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
