@@ -13,11 +13,11 @@ D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\FliApplication.jav
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Controller\CExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Repository\IPersonaRepository.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Dto\JwtDto.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Repository\RExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Entity\Usuario.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Entity\Educacion.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Entity\Experiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Controller\CEducacion.java
-D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Interface\RExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Service\SExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Controller\Mensaje.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\jwt\JwtProvider.java
@@ -30,5 +30,6 @@ D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Repository\REducac
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Interface\IPersonaService.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\jwt\JwtEntryPoint.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoExperiencia.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoPersona.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Entity\Rol.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Entity\Persona.java

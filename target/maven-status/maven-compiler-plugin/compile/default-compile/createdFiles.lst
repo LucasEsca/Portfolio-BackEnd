@@ -6,10 +6,10 @@ com\Portfolio\fli\Security\Dto\JwtDto.class
 com\Portfolio\fli\Service\SEducacion.class
 com\Portfolio\fli\Security\Entity\Rol.class
 com\Portfolio\fli\Security\Service\UserDetailsImp.class
-com\Portfolio\fli\Interface\RExperiencia.class
 com\Portfolio\fli\Entity\Persona.class
 com\Portfolio\fli\Service\ImpPersonaService.class
 com\Portfolio\fli\Security\jwt\JwtTokenFilter.class
+com\Portfolio\fli\Dto\dtoPersona.class
 com\Portfolio\fli\Security\Dto\NuevoUsuario.class
 com\Portfolio\fli\Interface\IPersonaService.class
 com\Portfolio\fli\Security\Controller\AuthController.class
@@ -22,6 +22,7 @@ com\Portfolio\fli\Controller\PersonaController.class
 com\Portfolio\fli\Security\Entity\UsuarioPrincipal.class
 com\Portfolio\fli\Security\Dto\LoginUsuario.class
 com\Portfolio\fli\Security\Enum\RolNombre.class
+com\Portfolio\fli\Repository\RExperiencia.class
 com\Portfolio\fli\Controller\CEducacion.class
 com\Portfolio\fli\Repository\IPersonaRepository.class
 com\Portfolio\fli\FliApplication.class
