@@ -2,7 +2,6 @@ package com.Portfolio.fli.Controller;
 
 import com.Portfolio.fli.Dto.dtoPersona;
 import com.Portfolio.fli.Entity.Persona;
-import com.Portfolio.fli.Interface.IPersonaService;
 import com.Portfolio.fli.Security.Controller.Mensaje;
 import com.Portfolio.fli.Service.ImpPersonaService;
 import io.micrometer.common.util.StringUtils;
@@ -13,32 +12,17 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-/*import org.springframework.web.bind.annotation.PostMapping;*/
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/persona")
 @CrossOrigin(origins = {"https://forntendprueba.web.app","http://localhost:4200"})
 public class PersonaController {
-    @Autowired ImpPersonaService impPersonaService;
-    /*@Autowired IPersonaService ipersonaService;
-    
-       /* @GetMapping("/personas/traer")
-    public List<Persona> getPersona(){
-        return ipersonaService.getPersona();
-    }
-    
-    @PostMapping("/personas/crear")
-    public String createPersona(@RequestBody Persona persona){
-        ipersonaService.savePersona(persona);
-        return "La persona fue creada correctamente";
-    }
-    
-        @GetMapping("/personas/traer/perfil")
-    public Persona findPersona(){
-        return ipersonaService.findPersona((long)1);
-    }*/
+    @Autowired 
+    ImpPersonaService impPersonaService;
     
  @GetMapping("/lista")
     public ResponseEntity<List<Persona>> list(){

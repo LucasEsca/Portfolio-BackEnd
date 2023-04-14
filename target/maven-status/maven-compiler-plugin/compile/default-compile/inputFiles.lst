@@ -1,10 +1,12 @@
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Service\UserDetailsImp.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Service\RolService.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Service\Shys.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\jwt\JwtTokenFilter.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Service\SEducacion.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Controller\AuthController.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Enum\RolNombre.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Repository\iUsuarioRepository.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Repository\Rhys.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Dto\LoginUsuario.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Dto\NuevoUsuario.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\MainSecurity.java
@@ -20,6 +22,7 @@ D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Entity\Experiencia
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Controller\CEducacion.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Service\SExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Controller\Mensaje.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Entity\hys.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\jwt\JwtProvider.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Controller\PersonaController.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Entity\UsuarioPrincipal.java
@@ -27,7 +30,8 @@ D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\Repositor
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Service\ImpPersonaService.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoEducacion.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Repository\REducacion.java
-D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Interface\IPersonaService.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoHys.java
+D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Controller\Chys.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Security\jwt\JwtEntryPoint.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoExperiencia.java
 D:\Proyecto\Portfolio-BackEnd\src\main\java\com\Portfolio\fli\Dto\dtoPersona.java
